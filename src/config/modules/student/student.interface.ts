@@ -25,12 +25,12 @@ export type LocalGuardian = {
 export type Student = {
   id: string;
   name: UserName;
-  gender: 'male' | 'female';
+  gender: 'male' | 'female' | 'other';
   dateOfBirth?: string;
   email: string;
   contactNo: string;
   emergencyContactNo: string;
-  bloodGroup: 'A+' | 'O+' | 'A-' | 'O-';
+  bloodGroup?: 'A+' | 'O+' | 'A-' | 'O-';
   presentAddress: string;
   permanentAddress: string;
   gurdian: Gurdian;
